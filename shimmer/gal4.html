@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<style>
+    /*navigation bar */
+    body{
+        background-image: url("wallfloral.png");
+        background-size:1600px 800px;
+        background-repeat: no-repeat;
+        background-color: rgb(66, 66, 66);
+       
+    }
+    .navb{
+        margin-top:-50px;
+        margin-left: 100px;
+    }
+    .navb li{
+        
+            display: inline;
+            font-family: Agency FB;
+            letter-spacing: 1px;
+            font-weight: bold;
+            width:100%;
+            height: 20px;
+            padding: 15px;
+    }
+
+    .navb li:hover{
+        
+        border: 2px solid rgb(255, 255, 255);
+        
+    }
+    .navb a{
+        color: rgb(255, 255, 255);
+        letter-spacing: 1.5px;
+    }
+
+   a{
+        text-decoration:none;        
+    }
+    li{
+        list-style-type:none;
+    }
+
+    /*footer*/
+
+    .foot{
+        margin-top: 800px;
+        background-color: rgb(66, 66, 66);
+        font-family:Century Gothic;
+        text-align: center;
+        font-size: 12px;
+        color: white;
+        height:240px;
+        padding-top: 17px;
+    }
+    .foot  li {
+        padding: 4px;
+    }
+    /*new*/
+    
+    .bigbox{
+        position:absolute;
+        margin-top:8px;
+        margin-bottom: 100px;
+        margin-right: 100px;
+        margin-left:150px;
+        width: 1200px;
+        height: 500px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        backdrop-filter:blur(10px);
+        background-color: rgba(0, 0, 0, 0.205);
+        border:0.4px solid rgba(0, 0, 0, 0.363);
+        border-radius: 22px;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.315);
+    }
+    /*box 2 styling*/
+
+    h2{
+        margin-top:20px;
+        text-align: center;
+        font-family:Century Gothic;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+
+    }
+
+    .box1 {
+        float: left;
+        width:750px;
+        height:500px;
+        overflow-y:scroll;
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        }
+   
+    #scroll::-webkit-scrollbar-track
+    {      
+        
+        background-color: #f5f5f500;
+    }
+
+    #scroll::-webkit-scrollbar
+    {
+        border-radius: 20px;
+        width: 14px;
+        background-color: #00000086;
+    }
+
+    #scroll::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        background-color: #000000d0;
+    }
+
+
+    .box1 table{
+        
+        width:630px;
+        margin-left:45px;
+        margin-top: 5px;
+        margin-bottom:10px;
+    }
+    .box1 td{        
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.199);
+        padding: 15px;
+    }
+    .pics{
+        filter: grayscale(100%);
+        width: 500px;
+        height: 333px;
+    }
+    .pics:hover{
+        filter: grayscale(0%);
+    }
+    /*box 2 styling*/
+
+    .box2{
+       
+       float: right;
+       width:450px;
+       height:500px;
+       
+   }
+
+   .flip-box {
+    width: 400px;
+    height: 500px;
+    perspective: 1000px;
+    margin-left:22px;
+    
+    }
+
+    .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+    }
+
+    .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+    }
+
+    .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius:15px;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.315);
+    }
+
+    .flip-box-front {
+    background-image: url("floralpatch.png");
+    background-size: 100% 120%;  
+      
+    }
+
+    .flip-box-front h2 {
+        background-color: rgba(53, 61, 32, 0.842);
+        color: rgb(255, 255, 255);
+        font-family:'Century Gothic' ;
+        height: 70px;
+        margin-top: 300px;
+        padding-top: 35px;
+        text-align: center;
+    }
+    .flip-box-back {
+    backdrop-filter:blur(10px);
+    background-color: rgba(0, 0, 0, 0.205);
+    border:0.7px solid rgba(0, 0, 0, 0.082);
+    color: white;
+    transform: rotateY(180deg);
+    
+    }
+
+    .flip-box-back form{
+        margin-top: 60px;
+        margin-left: 100px;
+        height: 400px;
+        
+    }
+
+    .flip-box-back label{
+        font-family: 'Century Gothic';
+        font-weight: 1px;
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        color: rgb(255, 255, 255);
+         
+    }
+
+    .flip-box-back input,textarea{
+        font-family:'Century Gothic';
+        font-size: 12.5px;
+        color:rgb(3, 2, 2);
+        padding-left: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgba(187, 187, 187, 0.274);
+        height:30px;
+        width: 200px;
+    }
+
+    
+</style>
+<body>
+
+    <div><img src="blacklogo.png" alt="logo" height="80px" width="80px" style="margin-left: 35px; margin-top: 25px;"></div>
+
+    <div>
+        <ul class="navb" >
+        <li><a href="home.html">WHAT WE OFFER</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="portfolio.html"><u>PROJECT PORTFOLIO</u></a></li>
+        <li><a href="contactus.html">CONTACT US</a></li>
+        <li><a href="hire.html">HIRE US</a></li>
+        </ul>
+    </div>
+
+    <h2>Architectural Critique</h2>
+
+    <div class="bigbox">
+        <div class="box1" id="scroll"> 
+        <table cellspacing="70px">
+            <tr>
+                <td><img src="D:/wall/1.png" class="pics"></td>                                
+            </tr>
+            <tr>
+                <td><img src="D:/wall/2.png" class="pics"></td>                                
+            </tr>
+            <tr>
+                <td><img src="D:/wall/3.png" class="pics"></td>                                
+            </tr>
+            <tr>
+                <td><img src="D:/wall/4.png" class="pics"></td>                                
+            </tr>
+            <tr>
+                <td><img src="D:/wall/5.jpg" class="pics"></td>                                
+            </tr>
+            <tr>
+                <td><img src="D:/wall/6.png" class="pics"></td>                                
+            </tr>
+            <tr>
+                <td><img src="D:/wall/7.png" class="pics"></td>                                
+            </tr>
+            <tr>
+                <td><img src="D:/wall/8.png" class="pics"></td>                                
+            </tr>
+
+        </table>
+        </div>
+        
+        <div class="box2">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>TAP AND POST YOUR VIEWS!</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <form>
+                            <label for="uname">USER NAME</label><br>
+                                <input type="text" id="uname" name="uname" value="ENTER NAME" style="margin-bottom:11px; margin-top:5px;"><br>
+            
+                            <label for="mail">EMAIL </label><br>
+                                <input type="text" id="mail" name="mailad" value="ENTER EMAIL " style="margin-bottom:11px; margin-top:5px;"><br>
+            
+                            <label for="phone" style="margin-top: 100px;">PHONE NUMBER</label><br>
+                                <input type="text" id="phno" name="phno" value="ENTER PHONE NUMBER" style="margin-bottom:11px; margin-top:5px;"><br>
+                            
+                            <label for="revbx">YOUR REVIEW</label><br>               
+                                <textarea style="width: 200px; height: 100px; margin-bottom:16px; margin-top:5px;">Enter text(20 words only)...</textarea><br>
+                            
+                            <input type="submit" value="SUBMIT" class="btn" style="width:120px; height: 50px; margin-left: 50px; font-size: 16px; font-weight: bold; background: rgba(0, 0, 0, 0.801); color: white;" >
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div  class="foot">
+        <ul>
+          <li style="font-size: 16px;"><b>VISIT US</b></li>
+          <li>+91 45 56788</li>
+          <li>shimmer@gmail.com</li>
+          <li>weclickedit@gmail.com</li>
+          <li>    </li>					  
+          <li style="font-size: 16px; padding-top:20px;"><b>LOCATION</b></li>
+          <li>GANDHINAGAR BYPASS</li>
+          <li>NEAR GR ROAD</li>					  
+        </ul>
+    </div>
+</body>
+</html>
+
+
+
+

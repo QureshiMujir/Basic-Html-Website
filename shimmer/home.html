@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<style>
+    /*navigation bar */
+    body{
+        background-size: cover;
+        background-image: url("wallwhite.jpg");
+    }
+    .back{
+        background-image: url("pic2.png");
+         
+        height:450px;   
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .navb{
+        margin-top:-50px;
+        margin-left: 100px;
+    }
+    .navb li{
+        
+            display: inline;
+            font-family: Agency FB;
+            letter-spacing: 1px;
+            font-weight: bold;
+            width:100%;
+            height: 20px;
+            padding: 15px;
+    
+    }
+
+    .navb li:hover{
+        
+        border: 2px solid rgb(0, 0, 0);        
+        
+    }
+    .navb a{
+        color: rgb(0, 0, 0);
+    }
+
+   a{
+        text-decoration:none;        
+    }
+    li{
+        list-style-type:none;
+    }
+
+    /*footer*/
+
+    .foot{
+
+        background-color: rgb(66, 66, 66);
+        font-family:Century Gothic;
+        text-align: center;
+        font-size: 12px;
+        color: white;
+        height:240px;
+        padding-top: 17px;
+    }
+    .foot  li {
+        padding: 4px;
+    }
+
+
+    /*new*/
+    .sas{
+        width: 100%;
+        height: 300px;
+        text-align: center;
+    }
+    .sas h2{
+        font-size:45px;
+        font-family:FFF Tusj;
+        letter-spacing: 3px;
+        color: rgb(4, 4, 41);
+    }
+    .sas h3{
+        font-size:20px;
+        font-family:Century Gothic;
+        letter-spacing: 1.5px;
+    } 
+    .sas p{
+        font-size: 24px;
+        font-family:Quesha;
+    }
+    .found{
+        position: relative;
+        width: 50%;
+        border-radius: 10px;
+    }
+    .slide{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #00000080;
+        overflow: hidden;
+        width: 340px;
+        height: 0;
+        transition: .5s ease;
+        border-radius: 10px;
+        
+    }
+
+    .found:hover .slide {
+        height: 100%;
+    }
+
+    .cmt {
+        font-size: 24px;
+        font-family:Quesha;
+        color: white;
+        text-align: center;
+        margin-top: 150px;
+    }
+
+    .review{
+        margin-top:-30px;
+        margin-left:120px;
+        
+    }
+    .review td{         
+        backdrop-filter:blur(2px); 
+        box-shadow: 5px 5px 8px 8px rgba(0, 0, 0, 0.137);       
+    }
+    .review td img{
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.315);
+    }
+    .award table td{
+        box-shadow: 5px 5px 8px 8px rgba(0, 0, 0, 0.137);   
+    }
+
+</style>
+<body>
+
+    <div class="back">
+    <div><img src="whitelogo.png" alt="logo" height="80px" width="80px" style="margin-left: 35px; margin-top: 25px;"></div>
+
+    <div>
+        <ul class="navb" >
+        <li><a href="home.html"><u>WHAT WE OFFER</u></a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="portfolio.html">PROJECT PORTFOLIO</a></li>
+        <li><a href="contactus.html">CONTACT US</a></li>
+        <li><a href="hire.html">HIRE US</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="sas">
+        <h2>SHIMMER</h2>
+        <h3>WE DESIGN YOUR DESIRES</h3>
+        <p>Interior Designers make interior spaces functional, <br>
+            safe, and beautiful by determining space<br> 
+            requirements and selecting decorative items,<br> 
+            such as colors, lighting, and materials.</p>
+    </div>
+
+    <div style="background-color:rgba(0, 0, 0, 0.432); height: 600px; margin-bottom: 70px; padding-top: 70px; padding-left: 300px;">
+        <h3 style="margin-top:10px; margin-left: 400px; font-size:20px; font-family:Century Gothic; letter-spacing: 1.5px;">OUR LEADERS</h3>
+        <div class="found" style="float: left;">            
+                <img src="human2.jpg" alt="founder" height="430px" width="340px" style="border-radius: 10px;">
+                    <div class="slide">
+                        <div class="cmt">"My name is Anna Johnson, I'm a graphic designer<br> - I make logos that everyone remembers.<br> I'm looking for a job in a company that will value<br> my skills and accept me into its team."</div>
+                     </div>            
+        </div>
+
+
+        <div class="found"  style="float:right;">
+            <img src="human1.jpg" alt="founder" height="430px" width="340px" style="border-radius: 10px;">
+            <div class="slide">
+                <div class="cmt">"My name is Anna Johnson, I'm a graphic designer<br> - I make logos that everyone remembers.<br> I'm looking for a job in a company that will value<br> my skills and accept me into its team."</div>
+
+             </div>  
+        </div> 
+            
+    </div>
+    
+    <div style=" height:400px; margin-bottom: 80px;">
+        <h3 style="padding-top:25px; margin-left:650px; font-size:20px; font-family:Century Gothic; letter-spacing: 1.5px;">OUR HAPPY CLIENTS</h3>
+        <table cellspacing="50px" class="review">
+            <tr>
+                <td style="height: 250px; width:500px;  background-color:rgba(165, 155, 255, 0.288);  border-radius: 10px; padding: 30px;">
+                    <img src="face.jpg" alt="face" style="border-radius:50%; height:120px; width: 120px; border:10px solid white; float: left;">
+                    <p style="float: right; font-size:19px; font-family: Monotype Corsiva;">"It says the team has been contacted, it just shows<br> red writing talking about an error, it doesn't load.<br> Tried multiple times and a week apart. That's <br>sad because I had high hopes for it and was<br> thinking of buying a plan for it!"</p>
+                    <h3 style=" margin-left:170px; font-size:20px; font-family:Monotype Corsiva; letter-spacing: 1px;">-Ria Josh</h3>
+                </td>
+                
+                <td style="height: 250px; width:500px;  background-color:rgba(165, 155, 255, 0.288);  border-radius: 10px; padding: 30px;">
+                    <img src="face.jpg" alt="face" style="border-radius:50%; height:120px; width: 120px; border:10px solid white; float: left;">
+                    <p style="float: right; font-size:19px; font-family: Monotype Corsiva;">"It says the team has been contacted, it just shows<br> red writing talking about an error, it doesn't load.<br> Tried multiple times and a week apart. That's <br>sad because I had high hopes for it and was<br> thinking of buying a plan for it!"</p>
+                    <h3 style=" margin-left:170px; font-size:20px; font-family:Monotype Corsiva; letter-spacing: 1px;">-Ria Josh</h3>
+                </td>
+                
+            </tr>
+        </table>
+    </div>
+
+    <div class="award">
+                <table width="100%" height="450px" cellspacing="30px">
+            <tr>
+                <td  colspan="4" height="20px" >
+                <h3 style="padding-top:0px; margin-left:650px; font-size:20px; font-family:Century Gothic; letter-spacing: 1.5px;">ACHIVEMENTS</h3>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%" style="background-color: rgb(255, 255, 255); text-align: center;" >
+                   <img src="D:/wall/2.png" alt="awar1" width="330px" height="200px" >
+                   <p style=" font-size:17px; font-family: Monotype Corsiva;"><b>BEST DESIGN OF THE YEAR 2020 </b><br><br>it's not only about looking good. It's about <br>how spaces subconsciously creep in and something may<br> function in a way that was planned and you many <br>not even realize it. Form first, then the beauty<br> excited the eye. It's a team. </p>
+                </td>
+                <td width="25%" style="background-color: rgb(255, 255, 255); text-align: center;" >
+                   <img src="D:/wall/4.png" alt="awar1" width="330px" height="200px" >
+                   <p style=" font-size:17px; font-family: Monotype Corsiva;"><b>BEST DESIGN OF THE YEAR 2019 </b><br><br>it's not only about looking good. It's about <br>how spaces subconsciously creep in and something may<br> function in a way that was planned and you many <br>not even realize it. Form first, then the beauty<br> excited the eye. It's a team. </p>
+                </td>
+                <td width="25%" style="background-color: rgb(255, 255, 255); text-align: center;" >
+                   <img src="D:/wall/6.png" alt="awar1" width="330px" height="200px" >
+                   <p style=" font-size:17px; font-family: Monotype Corsiva;"><b>BEST DESIGN OF THE YEAR 2018 </b><br><br>it's not only about looking good. It's about <br>how spaces subconsciously creep in and something may<br> function in a way that was planned and you many <br>not even realize it. Form first, then the beauty<br> excited the eye. It's a team. </p>
+                </td>
+                <td width="25%" style="background-color: rgb(255, 255, 255); text-align: center;" >
+                   <img src="D:/wall/7.png" alt="awar1" width="330px" height="200px" >
+                   <p style=" font-size:17px; font-family: Monotype Corsiva;"><b>BEST DESIGN OF THE YEAR 2017 </b><br><br>it's not only about looking good. It's about <br>how spaces subconsciously creep in and something may<br> function in a way that was planned and you many <br>not even realize it. Form first, then the beauty<br> excited the eye. It's a team. </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+
+    <div class="foot">
+        <ul>
+          <li style="font-size: 16px;"><b>VISIT US</b></li>
+          <li>+91 45 56788</li>
+          <li>shimmer@gmail.com</li>
+          <li>weclickedit@gmail.com</li>
+          <li>    </li>					  
+          <li style="font-size: 16px; padding-top:20px;"><b>LOCATION</b></li>
+          <li>GANDHINAGAR BYPASS</li>
+          <li>NEAR GR ROAD</li>					  
+        </ul>
+    </div>
+</body>
+</html>
+
+
+
+

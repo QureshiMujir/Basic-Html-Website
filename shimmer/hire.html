@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<style>
+    /*navigation bar */
+    body{
+        background-image: url("walltext.jpg");
+        width:100%;
+    }
+    .navb{
+        margin-top:-50px;
+        margin-left: 100px;
+    }
+    .navb li{
+        
+            display: inline;
+            font-family: Agency FB;
+            letter-spacing: 1px;
+            font-weight: bold;
+            width:100%;
+            height: 20px;
+            padding: 15px;
+    }
+
+    .navb li:hover{
+        
+        border: 2px solid white;
+        
+    }
+    .navb a{
+        color: white;
+    }
+
+   a{
+        text-decoration:none;        
+    }
+    li{
+        list-style-type:none;
+    }
+
+    /*footer*/
+
+    .foot{
+
+        background-color: rgb(66, 66, 66);
+        font-family:Century Gothic;
+        text-align: center;
+        font-size: 12px;
+        color: white;
+        height:240px;
+        padding-top: 17px;
+    }
+    .foot  li {
+        padding: 4px;
+    }
+    /*new*/
+     
+    .log{
+        backdrop-filter:blur(2px); 
+        box-shadow: 5px 5px 8px 8px rgba(0, 0, 0, 0.137);
+        color: white;
+        font-size: 15px;
+        font-family:Century Gothic ;
+    }
+
+    .log input{
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.205);
+        border: none;
+        color: white;
+        font-size: 12px;
+        font-family:Century Gothic ;
+    }
+
+    .social td{
+        height:100px;
+        width: 100px;
+    }
+    
+    .social td img{
+        background-color: rgb(66, 66, 66);
+        border: 2px dashed rgb(68, 68, 68);
+        border-radius: 50%;
+        height:100px;
+        width: 100px;
+    }
+
+    .social td img:hover{
+        background-color: rgb(255, 255, 255);
+        border: 2px dashed white;
+    }
+
+</style>
+<body>
+
+    <div><img src="blacklogo.png" alt="logo" height="80px" width="80px" style="margin-left: 35px; margin-top: 25px;"></div>
+
+    <div>
+        <ul class="navb" >
+        <li><a href="home.html">WHAT WE OFFER</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="portfolio.html">PROJECT PORTFOLIO</a></li>
+        <li><a href="contactus.html">CONTACT US</a></li>
+        <li><a href="hire.html"><u>HIRE US</u></a></li>
+        </ul>
+    </div>
+
+    <div class="log" style=" width:540px; height:330px; text-align: center; padding-top:20px; margin-top:80px; margin-left: 520px; background-color:rgba(165, 155, 255, 0.288);  border-radius: 10px; ">
+                            <h2 style="font-family:Century Gothic; font-size: 15px; color: white;"><u>LOG IN</u></h2>
+        <form action="#" method="POST">
+                
+                <label for="uname">USER NAME/EMAIL</label><br>
+                <input type="text" id="uname" name="uname" value="ENTER NAME" style="margin-bottom:20px; margin-top:10px; width: 200px; height: 30px;"><br>
+
+                <label for="password">PASSWORD</label><br>
+                <input type="password" id="pass" name="pasw" value="ENTER PASSWORD" style="margin-bottom:20px; margin-top:10px; width: 200px; height: 30px;"><br>
+
+               </form>
+               <button onclick="document.location='book.html'" style="width:160px; height: 50px; margin-top:10px;margin-bottom: 10px; margin-left: 20px; font-size: 14px; background: rgba(181, 234, 255, 0.801); border:none; color: rgb(0, 0, 0);">BOOK APPOINTMENT</button><br>
+               <a href="signup.html" style="font-family:Century Gothic; font-size: 15px; color: white;"><u>SIGN UP</u></a>
+               
+    </div>
+
+    <div class="social" style="margin-left: 500px; margin-bottom: 50px; margin-top:10px;">
+        <table class="media"  cellspacing="28px">
+            <tr>
+                <td><img src="D:/logo/fb.png" alt="fb"></td>
+                <td><img src="D:/logo/insta.png" alt="insta"></td>
+                <td><img src="D:/logo/call.png" alt="call"></td>
+                <td><img src="D:/logo/twit.png" alt="twit"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="foot">
+        <ul>
+          <li style="font-size: 16px;"><b>VISIT US</b></li>
+          <li>+91 45 56788</li>
+          <li>shimmer@gmail.com</li>
+          <li>weclickedit@gmail.com</li>
+          <li>    </li>					  
+          <li style="font-size: 16px; padding-top:20px;"><b>LOCATION</b></li>
+          <li>GANDHINAGAR BYPASS</li>
+          <li>NEAR GR ROAD</li>					  
+        </ul>
+    </div>
+</body>
+</html>
+
+
+
+
